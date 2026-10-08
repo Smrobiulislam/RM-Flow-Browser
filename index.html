@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RM Flow - Your AI-Powered Browser demo">
+  <title>RM Flow — AI Browser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="logo">RM</span><span>RM <b>Flow</b></span></div>
+      <div class="tabs" id="tabs">
+        <button class="tab active">🏠 New Tab <span>×</span></button>
+        <button class="new-tab" id="newTab" title="New tab">+</button>
+      </div>
+      <div class="top-actions">
+        <button class="icon-btn" id="themeBtn" title="Toggle theme">☼</button>
+        <button class="avatar">R</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <button class="nav-btn" id="back">‹</button>
+      <button class="nav-btn" id="forward">›</button>
+      <button class="nav-btn" id="reload">↻</button>
+      <div class="address-wrap">
+        <span class="lock">⌁</span>
+        <input id="address" value="https://www.google.com" aria-label="Address bar">
+        <button id="go" class="go-btn">Go</button>
+      </div>
+      <button class="nav-btn" id="aiOpen" title="Open AI">✦</button>
+      <button class="nav-btn">⋮</button>
+    </div>
+
+    <main class="workspace">
+      <section class="browser-area">
+        <div class="hero">
+          <div class="hero-badge">✦ AI-FIRST BROWSER</div>
+          <h1>Browse smarter with <span>RM Flow</span></h1>
+          <p>A simple, fast and AI-powered browsing experience.</p>
+          <div class="search-box">
+            <span>⌕</span>
+            <input id="search" placeholder="Search the web or ask RM AI anything..." autocomplete="off">
+            <button id="searchBtn">Search</button>
+          </div>
+          <div class="quick-links">
+            <button data-query="Latest technology news">Technology</button>
+            <button data-query="Learn React.js">Learn React</button>
+            <button data-query="AI tools">AI Tools</button>
+            <button data-query="Web development">Web Development</button>
+          </div>
+        </div>
+
+        <div class="features">
+          <div class="feature"><div class="ficon">✦</div><h3>AI Assistant</h3><p>Ask, summarize, explain and create without leaving your browser.</p></div>
+          <div class="feature"><div class="ficon">⚡</div><h3>Fast & Simple</h3><p>Clean controls and a distraction-free browsing experience.</p></div>
+          <div class="feature"><div class="ficon">◈</div><h3>Smart Workspace</h3><p>Tabs, bookmarks, history and useful tools in one place.</p></div>
+        </div>
+      </section>
+
+      <aside class="ai-panel" id="aiPanel">
+        <div class="ai-head">
+          <div><span class="ai-dot">✦</span><strong>RM AI</strong><small> Your browsing assistant</small></div>
+          <button id="aiClose">×</button>
+        </div>
+        <div class="chat" id="chat">
+          <div class="message ai"><b>RM AI</b><br>Hi! I'm your RM Flow assistant. Ask me anything about the web, coding, writing or learning.</div>
+        </div>
+        <div class="suggestions">
+          <button>Explain React</button><button>Summarize this</button><button>Write something</button>
+        </div>
+        <div class="chat-input">
+          <input id="chatInput" placeholder="Ask RM AI...">
+          <button id="send">➤</button>
+        </div>
+        <p class="demo-note">Demo mode — connect an AI API for real AI responses.</p>
+      </aside>
+    </main>
+
+    <footer><span>RM Flow Demo</span><span>AI-powered browsing, redesigned.</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
